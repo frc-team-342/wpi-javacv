@@ -9,6 +9,8 @@
         <platform.name>${os.name}-${os.arch}</platform.name>
         <javacpp.version>0.7</javacpp.version>
         <javacv.version>0.7</javacv.version>
+        <logback.version>1.1.0</logback.version>
+        <slf4j.version>1.7.5</slf4j.version>
 
         <maven.jar.plugin.version>2.4</maven.jar.plugin.version>
     </properties>
@@ -30,6 +32,21 @@
             <version>${javacv.version}</version>
             <classifier>${platform.name}</classifier>
         </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
     </dependencies>
 
     <profiles>
@@ -37,7 +54,7 @@
             <id>macosx</id>
             <activation>
                 <os>
-                    <family>mac os x</family>
+                    <family>Mac OS X</family>
                     <arch>x86_64</arch>
                 </os>
             </activation>
