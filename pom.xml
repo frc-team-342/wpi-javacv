@@ -9,7 +9,7 @@
         <platform.name>${os.name}-${os.arch}</platform.name>
         <javacpp.version>0.7</javacpp.version>
         <javacv.version>0.7</javacv.version>
-    
+
         <maven.jar.plugin.version>2.4</maven.jar.plugin.version>
     </properties>
 
@@ -32,30 +32,30 @@
         </dependency>
     </dependencies>
 
-	<profiles>
-		<profile>
-			<id>macosx</id>
-			<activation>
-				<os>
-					<family>mac os x</family>
-					<arch>x86_64</arch>
-				</os>
-			</activation>
-			<properties>
-				<os.name>macosx</os.name>
-			</properties>
-		</profile>
-		<profile>
-			<id>windows</id>
-			<activation>
-				<os>
-					<family>Windows</family>
-					<arch>x86</arch>
-				</os>
-			</activation>
-			<properties>
-				<os.name>windows</os.name>
-			</properties>
-		</profile>
-	</profiles>
+    <profiles>
+        <profile>
+            <id>macosx</id>
+            <activation>
+                <os>
+                    <family>mac os x</family>
+                    <arch>x86_64</arch>
+                </os>
+            </activation>
+            <properties>
+                <os.name>macosx</os.name>
+            </properties>
+        </profile>
+        <profile>
+            <id>windows</id>
+            <activation>
+                <os>
+                    <family>Windows</family>
+                    <arch>x86</arch>
+                </os>
+            </activation>
+            <properties>
+                <os.name>windows</os.name>
+            </properties>
+        </profile>
+    </profiles>
 </project>
