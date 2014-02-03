@@ -1,7 +1,7 @@
 <project>
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>edu.wpi.first</groupId>
-	<artifactId>wpi-javacv</artifactId>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>edu.wpi.first</groupId>
+    <artifactId>wpi-javacv</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
